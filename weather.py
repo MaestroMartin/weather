@@ -1,3 +1,5 @@
+from pprint import pprint
+
 import requests
 
 city = "Brno "
@@ -10,4 +12,6 @@ url = Base_URL + "appid=" + "ed780eb9027702dbd34f95f4c86b7cef" + "&q=" + City + 
 response = requests.get(url).json()
 
 print(response)
+
+pprint(response)
 
